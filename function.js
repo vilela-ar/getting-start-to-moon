@@ -1,6 +1,7 @@
 function saudacao () {
     console.log('ola');
 }
+saudacao();
 function sum(a,b) {
     return a + b;
 }
