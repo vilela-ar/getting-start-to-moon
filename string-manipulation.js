@@ -32,7 +32,7 @@ console.log(isPalindrome("JavaScript")); // Deve imprimir false
 
 
 function getDomain(email) {
-return (email.substring(8, 18));
+    return (email.substring(8, 18));
 
 }
 
