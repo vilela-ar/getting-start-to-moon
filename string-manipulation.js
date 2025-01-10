@@ -10,6 +10,13 @@ function countWords(string) {
     //.split(/\s+/) \s+ considera qualquer quantidade de espaços consecutivos.,  Divide a string usando espaços em branco (incluindo múltiplos espaços) como delimitador
     return palavras.length
 }
-
-// Teste a função:
 console.log(countWords("Eu gosto de programar em JavaScript")); // Deve imprimir 6
+
+function replaceWord(sentence, oldWord, newWord) {
+    const regex = new RegExp(oldWord, 'g');
+    return sentence.replace(regex, newWord);
+}
+
+console.log(replaceWord("Eu gosto de JavaScript", "JavaScript", "Python"));
+
+// Deve imprimir "Eu gosto de Python"
