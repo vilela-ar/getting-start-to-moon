@@ -13,10 +13,18 @@ function countWords(string) {
 console.log(countWords("Eu gosto de programar em JavaScript")); // Deve imprimir 6
 
 function replaceWord(sentence, oldWord, newWord) {
-    const regex = new RegExp(oldWord, 'g');
-    return sentence.replace(regex, newWord);
+    const regex = new RegExp(oldWord, 'g'); // tira a primeira palavra
+    return sentence.replace(regex, newWord); // coloca a ultima palava
 }
 
 console.log(replaceWord("Eu gosto de JavaScript", "JavaScript", "Python"));
-
 // Deve imprimir "Eu gosto de Python"
+
+
+function isPalindrome(str) {
+    const strLimpa = str.replace(/\s+/g, '').toLowerCase();  // Remove espaços e converte para minúsculas
+    const strInvertida = strLimpa.split('').reverse().join('');   // Inverte a string
+    return strLimpa === strInvertida; //  // Verifica se a string limpa é igual à versão invertida
+}
+console.log(isPalindrome("arara")); // Deve imprimir true
+console.log(isPalindrome("JavaScript")); // Deve imprimir false
