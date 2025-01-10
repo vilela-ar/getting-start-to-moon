@@ -5,18 +5,21 @@ function capitalizeFirstLetter(str) {
 
 console.log(capitalizeFirstLetter("javascript")); 
 
+
+
 function countWords(string) {
     const palavras = string.trim().split(/\s+/); //.trim remove espaços em branco do inicio ao final da string
-    //.split(/\s+/) \s+ considera qualquer quantidade de espaços consecutivos.,  Divide a string usando espaços em branco (incluindo múltiplos espaços) como delimitador
+    //.split(/\s+/) \s+ considelace(rra qualquer quantidade de espaços consecutivos.,  Divide a string usando espaços em branco (incluindo múltiplos espaços) como delimitador
     return palavras.length
 }
 console.log(countWords("Eu gosto de programar em JavaScript")); // Deve imprimir 6
 
-function replaceWord(sentence, oldWord, newWord) {
-    const regex = new RegExp(oldWord, 'g'); // tira a primeira palavra
-    return sentence.replace(regex, newWord); // coloca a ultima palava
-}
 
+
+function replaceWord(sentence, oldWord, newWord) {
+    texto_modificado = sentence.replace(oldWord, newWord)
+    return texto_modificado
+}
 console.log(replaceWord("Eu gosto de JavaScript", "JavaScript", "Python"));
 // Deve imprimir "Eu gosto de Python"
 
@@ -28,3 +31,13 @@ function isPalindrome(str) {
 }
 console.log(isPalindrome("arara")); // Deve imprimir true
 console.log(isPalindrome("JavaScript")); // Deve imprimir false
+
+
+
+function getDomain(email) {
+return (email.substring(8, 18));
+
+}
+
+
+console.log(getDomain("usuario@gmail.com")); // Deve imprimir "gmail.com"
