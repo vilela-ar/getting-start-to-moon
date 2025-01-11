@@ -20,7 +20,12 @@ console.log(carro);
   Remova a propriedade idade.
   Exiba o objeto atualizado no console.
 */
-
+const pessoa = {
+    nome: 'Ana',
+    profissao: 'engenheira',
+  };
+  console.log(pessoa);
+  
 
 /*
   Exercício 3: Métodos em Objetos
