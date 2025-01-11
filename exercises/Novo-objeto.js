@@ -77,7 +77,15 @@ console.log(fabricante)
 
   console.log(`nome: ${name}, age: ${age}`) // rodrigo 21
 */
-
+const exibirUsuario = ({nome,idade,cidade}) => {
+    console.log(`O usuário ${nome} tem ${idade} anos e mora em ${cidade}.`);
+}
+const usuario = {
+    nome: 'João',
+    idade: 28,
+    cidade: 'Rio de Janeiro'
+  };
+  exibirUsuario(usuario);
 
 /*
   Exercício 7: Desestruturação com Rest (...ageStuff)
