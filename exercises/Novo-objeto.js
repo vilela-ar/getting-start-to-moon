@@ -6,8 +6,12 @@
   modelo (string)
   ano (número)
 */
-
-
+const carro = {
+  marca: 'porsche',
+  modelo: '992.2',
+  ano: 2025,
+}
+console.log(carro);
 /* 
   Exercício 2: Adicionar e Remover Propriedades
   Dado o objeto abaixo:
@@ -16,10 +20,6 @@
   Remova a propriedade idade.
   Exiba o objeto atualizado no console.
 */
-const pessoa = {
-  nome: 'Ana',
-  idade: 30
-};
 
 
 /*
