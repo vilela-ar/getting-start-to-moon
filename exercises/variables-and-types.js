@@ -2,15 +2,15 @@
 //As variáveis têm um nome e um tipo de dado associado, e o valor armazenado nelas pode ser modificado conforme o programa avança.
 let idade = 25;
 let nome = "Carlos";
-let Genêro = "Homem";
-let Vivo = true;
+let genero = "Homem";
+let vivo = true;
 //Uma constante é semelhante a uma variável, mas com uma diferença importante: uma vez que seu valor é definido, ele não pode ser alterado durante a execução do programa.
 //Ou seja, as constantes são usadas para armazenar valores que não irão mudar.
 const ficha = {
   idade: 50,
   name: "jose",
   genero: "masculino",
-  Vivo: true
+  vivo: true
 }
 
 // Tipos primitivos
@@ -46,10 +46,10 @@ console.log(letra);   //A
 console.log(simbolo); //!
 
 //exemplo bobolean
-let vivo = true; 
+vivo = true; 
 let ativo = false;
 
-console.log(Vivo); //true
+console.log(vivo); //true
 console.log(ativo); //false
 
 //exemplo string
