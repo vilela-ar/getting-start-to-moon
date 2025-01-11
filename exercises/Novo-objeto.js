@@ -21,11 +21,11 @@ console.log(carro);
   Exiba o objeto atualizado no console.
 */
 const pessoa = {
-    nome: 'Ana',
-    profissao: 'engenheira',
-  };
-  console.log(pessoa);
-  
+  nome: 'Ana',
+  profissao: 'engenheira',
+};
+console.log(pessoa);
+
 
 /*
   Exercício 3: Métodos em Objetos
@@ -35,7 +35,8 @@ const pessoa = {
   multiplicar(a, b) - retorna o produto de dois números.
   Teste os métodos chamando-os com diferentes valores e exibindo o resultado no console.
 */
-
+const multiplicar = (a, b) => a * b;
+console.log (multiplicar(3, 4));
 
 /*
   Exercício 5: Desestruturação de Objetos
