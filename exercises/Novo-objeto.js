@@ -54,8 +54,11 @@ const produto = {
     pais: 'Brasil'
   }
 };
+const {nome, preco, fabricante} = produto
 
-
+console.log(nome)
+console.log(preco)
+console.log(fabricante)
 /*
   Exercício 6: Função com Parâmetros Desestruturados
   Crie uma função chamada exibirUsuario que recebe um objeto com as seguintes propriedades:
