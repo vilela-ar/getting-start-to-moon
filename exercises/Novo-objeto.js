@@ -25,8 +25,8 @@ const pessoa = {
   profissao: 'engenheira',
 };
 console.log(pessoa);
-
-
+delete pessoa.profissao
+console.log(pessoa);
 /*
   Exercício 3: Métodos em Objetos
   Crie um objeto chamado calculadora com os seguintes métodos:
