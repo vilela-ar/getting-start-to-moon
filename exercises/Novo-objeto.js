@@ -35,8 +35,14 @@ console.log(pessoa);
   multiplicar(a, b) - retorna o produto de dois números.
   Teste os métodos chamando-os com diferentes valores e exibindo o resultado no console.
 */
-const multiplicar = (a, b) => a * b;
-console.log (multiplicar(3, 4));
+const calculadora = {
+  multiplicar: (a, b) => a * b,
+  sum: function (a, b) {
+    return a + b
+  }
+}
+console.log (calculadora.multiplicar(3, 4));
+console.log (calculadora.sum(5, 10));
 
 /*
   Exercício 5: Desestruturação de Objetos
