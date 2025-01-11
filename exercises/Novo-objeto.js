@@ -101,3 +101,8 @@ const livro = {
   ano: 2023,
   preco: 45.0
 };
+const {titulo, autor, ...detalhes} = livro
+
+console.log(`Título: ${titulo}`);
+console.log(`Autor: ${autor}`);
+console.log('Detalhes:', detalhes);
